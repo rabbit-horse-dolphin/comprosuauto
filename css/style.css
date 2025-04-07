@@ -350,3 +350,9 @@ h6,
   45%  { transform: none; }
   100% { transform: none; }
 }
+
+@media (max-width: 767.98px) {
+    #send-msg {
+        margin: 0 !important;
+    }
+}
