@@ -118,7 +118,7 @@ h6,
 }
 
 .hero-header {
-    background: url(../img/bmw4.jpg) top right no-repeat;
+    background: url(../img/amarok.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -242,7 +242,7 @@ h6,
     height: calc(100% - 45px);
     top: 135px;
     left: 0;
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/service.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .8)), url(../img/grua.webp) center center no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -253,7 +253,7 @@ h6,
 }
 
 .bg-offer {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/offer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/truck_fleet.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -308,8 +308,11 @@ h6,
 }
 
 .bg-img {
-    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.jpg) center center no-repeat;
-    background-size: cover;
+    /* background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/money.jpg) center center no-repeat; */
+    background-image: url('../img/money.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 .little-text {
@@ -351,8 +354,128 @@ h6,
   100% { transform: none; }
 }
 
-@media (max-width: 767.98px) {
-    #send-msg {
-        margin: 0 !important;
+#send-msg {
+    margin: 0 !important;
+}
+
+
+#my_hero {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+/* ------------- */
+
+body {
+    background-color: #005;
+}
+
+h1, h2, h3, #nosotros h4 {
+    color: white !important;
+}
+
+p {
+    color: white !important;
+}
+
+/* Cursive */
+/* .text-primary { */
+/*     color: #a00 !important; */
+/* } */
+
+#topbar div {
+    background-color: #008 !important;
+}
+
+#topbar * {
+    color: white !important;
+}
+
+#topbar h6,
+#topbar i {
+    color: #e88f2a !important;
+}
+
+@media (max-width: 768px) {
+    #nosotros h1,
+#nosotros h2,
+#nosotros h3,
+#nosotros h4,
+#nosotros p {
+	text-align: center !important;
+}
+    #nosotros div.col-sm-6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-self: center;
+	justify-items: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
     }
+
+    /* #compramos div.d-flex.h-100 { */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* 	justify-content: center; */
+/* 	align-content: center; */
+/* 	justify-self: center; */
+/* 	justify-items: center; */
+/* 	align-items: center; */
+/* 	align-self: center; */
+/*     } */
+
+/*     #compramos div.d-flex.flex-column, */
+/* #compramos h4 { */
+/* 	max-width: 150px; */
+    /*     } */
+
+    .mb-lg-n5 {
+	padding-top: 2rem;
+    }
+}
+
+
+#tab-1 > div:nth-child(1) > div > div  div {
+    background-color: #2b2825 !important;
+    
+}
+
+#tab-1 > div:nth-child(1) > div > div  div h5 {
+    color: #e38f2a !important;
+}
+
+#tab-1 > div:nth-child(1) > div > div  div span {
+    color: white !important;
+}
+
+#tab-1 > div:nth-child(1) > div > div  div::before {
+    border-color: #2b2825 !important;
+}
+
+div.g-5:nth-child(1) h4 {
+    color: white !important;
+    
+    text-shadow:1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+div.g-5:nth-child(1) p {
+    color: black !important;
+    font-weight: bolder;
+}
+
+.autos-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.autos img {
+    width: 120px;
 }
