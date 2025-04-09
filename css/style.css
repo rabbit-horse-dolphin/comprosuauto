@@ -500,11 +500,13 @@ div.g-5:nth-child(1) p {
     flex-wrap: wrap; /* Allows the images to wrap */
     justify-content: center; /* Centers the images horizontally */
     gap: 10px; /* Space between images */
+    margin-bottom: 2rem;
 }
 
 .image-container img {
     max-width: 100%; /* Ensures images are responsive */
     height: auto; /* Maintains aspect ratio */
+    
     
     /* You can adjust the flex-basis value to control the size of the images */
 }
