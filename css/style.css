@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #E88F2A;
+    --primary: #d4af37;
     --secondary: #FAF3EB;
     --light: #FFFFFF;
     --dark: #2B2825;
@@ -118,7 +118,9 @@ h6,
 }
 
 .hero-header {
-    background: url(../img/amarok.jpg) top right no-repeat;
+    
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/amarok.jpg) top center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -242,7 +244,8 @@ h6,
     height: calc(100% - 45px);
     top: 135px;
     left: 0;
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .8)), url(../img/grua.webp) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/grua.webp) center center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
 }
@@ -253,7 +256,7 @@ h6,
 }
 
 .bg-offer {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/truck_fleet.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/truck_fleet.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -308,10 +311,10 @@ h6,
 }
 
 .bg-img {
-    /* background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/money.jpg) center center no-repeat; */
-    background-image: url('../img/money.jpg');
+    /* background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/money2.webp) center center no-repeat; */
+    background-image: url('../img/money4.jpg');
     background-repeat: repeat;
-    background-size: auto;
+    background-size: 17%;
     background-attachment: fixed;
 }
 
@@ -400,7 +403,7 @@ p {
 
 #topbar h6,
 #topbar i {
-    color: #e88f2a !important;
+    color: var(--primary) !important;
 }
 
 @media (max-width: 768px) {
@@ -441,6 +444,10 @@ p {
     .mb-lg-n5 {
 	padding-top: 2rem;
     }
+
+    #stats {
+	 padding-left: 4rem;
+    }
 }
 
 
@@ -450,7 +457,7 @@ p {
 }
 
 #tab-1 > div:nth-child(1) > div > div  div h5 {
-    color: #e38f2a !important;
+    color: var(--primary) !important;
 }
 
 #tab-1 > div:nth-child(1) > div > div  div span {
@@ -513,4 +520,31 @@ div.g-5:nth-child(1) p {
 
 #first-car-row {
     margin-bottom: 30px;
+}
+
+#hoy {
+    font-size: 8rem;
+    /* color: var(--primary); */
+}
+
+.shadowy {
+        text-shadow:1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.text-primary {
+    text-transform: uppercase;
+}
+
+#security-title {
+    text-shadow:1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+#security {
+    color: black !important;
+    font-weight: bolder;
+}
+
+#consulta-no-molesta {
+    text-transform: uppercase;
+    font-style: italic;
 }
