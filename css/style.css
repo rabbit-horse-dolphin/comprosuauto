@@ -500,7 +500,7 @@ div.g-5:nth-child(1) p {
     flex-wrap: wrap; /* Allows the images to wrap */
     justify-content: center; /* Centers the images horizontally */
     gap: 10px; /* Space between images */
-    margin-bottom: 2rem;
+    
 }
 
 .image-container img {
@@ -509,4 +509,8 @@ div.g-5:nth-child(1) p {
     
     
     /* You can adjust the flex-basis value to control the size of the images */
+}
+
+#first-car-row {
+    margin-bottom: 30px;
 }
